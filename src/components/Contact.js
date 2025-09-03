@@ -46,8 +46,8 @@ function Contact() {
         <h2 className="mb-4">Contact Me</h2>
         <p>
           Email me at{" "}
-          <a href="mailto:your@email.com" className="text-blue-500 underline">
-            your@email.com
+          <a href="mailto:jiocoders@email.com" className="text-blue-500 underline">
+            jiocoders@email.com
           </a>
         </p>
         <br />
