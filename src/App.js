@@ -6,24 +6,27 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import NotFound from "./components/NotFound"; // 👈 import
+import NotFound from "./components/NotFound";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <div className="container my-5">
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} /> {/* 👈 catch-all */}
-        </Routes>
-      </div>
-      <Footer />
-    </Router>
+    <div className="App" style={{ minHeight: "100vh", position: "relative" }}>
+      <Router>
+        <Header />
+        <div style={{ minHeight: "calc(100vh - 200px)" }}>
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
