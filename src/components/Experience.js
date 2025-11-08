@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { FaBriefcase, FaCalendarAlt, FaCode, FaMobile, FaServer } from "react-icons/fa";
+import { FaBriefcase, FaCalendarAlt, FaMobile, FaServer } from "react-icons/fa";
 
 function Experience() {
   const experiences = [
